@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CAT Intelligence Platform</title>
+<script>try{var t=localStorage.getItem('cat.theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app">
+  <nav class="sidebar" id="sidebar" aria-label="Main navigation">
+    <div class="brand">CAT Intelligence<small>Preparation platform</small></div>
+    <div class="nav" id="nav"></div>
+  </nav>
+  <div class="main-col">
+    <header class="topbar">
+      <button id="menuBtn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+      <div class="search"><input type="search" id="globalSearch" placeholder="Search questions, patterns, topics, formulas" aria-label="Global search"></div>
+      <span id="saveStatus" role="status" aria-live="polite">Not saved yet</span>
+      <button id="themeBtn" aria-label="Toggle theme">Theme</button>
+    </header>
+    <main id="main" tabindex="-1"></main>
+  </div>
+</div>
+<div id="toasts" aria-live="polite"></div>
+<script src="data/00_init.js"></script>
+<script src="data/sources.js" onerror="void 0"></script>
+<script src="data/exam_history.js" onerror="void 0"></script>
+<script src="data/topic_distribution.js" onerror="void 0"></script>
+<script src="data/findings.js" onerror="void 0"></script>
+<script src="data/patterns.js" onerror="void 0"></script>
+<script src="data/formulas.js" onerror="void 0"></script>
+<script src="data/papers/mock1.js" onerror="void 0"></script>
+<script src="data/papers/mock2.js" onerror="void 0"></script>
+<script src="data/papers/mock3.js" onerror="void 0"></script>
+<script src="data/papers/mock4.js" onerror="void 0"></script>
+<script src="data/papers/mock5.js" onerror="void 0"></script>
+<script src="js/store.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/data.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/records.js"></script>
+<script src="js/router.js"></script>
+<script src="js/runner.js"></script>
+<script src="js/exam.js"></script>
+<script src="js/results.js"></script>
+<script src="js/view_dashboard.js"></script>
+<script src="js/view_research.js"></script>
+<script src="js/view_archive.js"></script>
+<script src="js/view_simulator.js"></script>
+<script src="js/view_analysis.js"></script>
+<script src="js/view_patterns.js"></script>
+<script src="js/view_practice.js"></script>
+<script src="js/view_trackers.js"></script>
+<script src="js/view_mistakes.js"></script>
+<script src="js/view_revision.js"></script>
+<script src="js/view_performance.js"></script>
+<script src="js/view_planner.js"></script>
+<script src="js/view_settings.js"></script>
+<script src="js/view_search.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
