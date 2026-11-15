@@ -1,0 +1,13 @@
+{
+  "_note": "Self-imposed cap in estimated cost units (roughly USD at the weights below; weights are estimates, edit to match your plan). Raise session_budget to continue after a hard stop.",
+  "session_budget": 15.0,
+  "warn_at": 0.7,
+  "weights_per_mtok": {
+    "haiku":  {"in": 1.0,  "out": 5.0},
+    "sonnet": {"in": 3.0,  "out": 15.0},
+    "opus":   {"in": 5.0,  "out": 25.0},
+    "fable":  {"in": 10.0, "out": 50.0}
+  },
+  "cache_read_factor": 0.1,
+  "cache_write_factor": 1.25
+}
