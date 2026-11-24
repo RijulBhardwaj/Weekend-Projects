@@ -28,3 +28,10 @@ with a line cap. Agents start cold; include what you already know.
 - Cap and weights: `.claude/usage/budget.json`. At `warn_at`: haiku agents only, wrap up.
   At 100%: all tools are blocked; report done/pending and stop. Only the user raises the cap.
 - `python3 .claude/hooks/usage.py report` prints the table.
+
+## Context hygiene (applies to every session)
+- Never Read/cat files denied in settings or >50KB; use head/grep/offset via scout.
+- Do not load MCP-heavy skills/plugins/connectors unless the task needs them; prefer ToolSearch over loading schemas.
+- All agent reports are capped: scout 30, runner 30, worker 40, web-fetch 20 lines.
+- No restating plans or summarising agent reports.
+- End long threads with a fresh session rather than carrying 80k+ context.

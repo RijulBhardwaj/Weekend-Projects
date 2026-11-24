@@ -1,4 +1,6 @@
 {
+  "permissions": {"deny": ["Read(./spam.zip)", "Read(./Spam_Detection/*.pkl)", "Read(./Spam_Detection/sms_spam.csv)", "Read(./cat-platform/data/sources.js)"]},
+  "env": {"DISABLE_NON_ESSENTIAL_MODEL_CALLS": "1", "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1"},
   "hooks": {
     "PreToolUse": [
       {"matcher": "*", "hooks": [{"type": "command", "command": "python3 \"$CLAUDE_PROJECT_DIR/.claude/hooks/usage.py\" gate", "timeout": 10}]}
