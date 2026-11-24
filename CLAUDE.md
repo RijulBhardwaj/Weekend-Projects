@@ -35,3 +35,11 @@ with a line cap. Agents start cold; include what you already know.
 - All agent reports are capped: scout 30, runner 30, worker 40, web-fetch 20 lines.
 - No restating plans or summarising agent reports.
 - End long threads with a fresh session rather than carrying 80k+ context.
+
+## Prompt habits (every session)
+- Batch related asks into one message; one topic per session, start fresh for a new topic.
+- Fix narrowly ("only redo section 3"); edit the original message instead of sending "I meant...".
+- For under-specified builds, ask clarifying questions first (AskUserQuestion), then build.
+- Feed files as markdown/text, not PDFs or screenshots; keep recurring files in a Project.
+- Keep a reusable prompt/spec template per task type; vary only the changing part.
+- Summarise and restart at ~15-20 messages instead of carrying old context.
